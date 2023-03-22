@@ -1,8 +1,8 @@
 <template>
-    <div class="flex flex-col gap-3 mb-12">
+    <div class="flex flex-col gap-3 mb-12 ">
         <span class="text-2xl font-semibold">M San Rem Villa</span>
-        <div class="flex justify-between">
-            <div class="flex gap-3 items-center">
+        <div class="flex justify-between items-end lg:items-start">
+            <div class="flex flex-col lg:flex-row lg:gap-3 lg:items-center">
                 <!-- star -->
                 <div class="flex gap-1 items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275Z"/></svg>
@@ -15,7 +15,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M20 2H4v2l5.81 4.36a7.004 7.004 0 0 0-4.46 8.84a6.996 6.996 0 0 0 8.84 4.46a7 7 0 0 0 0-13.3L20 4V2m-5.06 17.5L12 17.78L9.06 19.5l.78-3.33l-2.59-2.24l3.41-.29L12 10.5l1.34 3.14l3.41.29l-2.59 2.24l.78 3.33Z"/></svg>
                     <span>Superhost</span>
                 </div>
-                <span>·</span>
+                <span class="hidden lg:block">·</span>
                 <span><u>Bayan ng Remigio, Philippines</u></span>
             </div>
             <div class="flex gap-3">
@@ -31,14 +31,14 @@
         </div>
         <!-- Photo Gallery -->
         <div class="grid grid-cols-4 gap-5 rounded-3xl group mb-5">
-            <img class="row-span-2 col-span-2 first:odd:rounded-l-xl" src="https://a0.muscache.com/im/pictures/46132386-ad38-4573-b0aa-420294cd9ec2.jpg?im_w=1200" alt="" srcset="">
-            <img class="group-[:nth-of-type(3)_&]:rounded-tr-3xl last:odd:rounded-br-xl" src="https://a0.muscache.com/im/pictures/46132386-ad38-4573-b0aa-420294cd9ec2.jpg?im_w=1200" alt="" srcset="">
-            <img class="group-[:nth-of-type(3)_&]:rounded-tr-3xl last:odd:rounded-br-xl" src="https://a0.muscache.com/im/pictures/46132386-ad38-4573-b0aa-420294cd9ec2.jpg?im_w=1200" alt="" srcset="">
-            <img class="group-[:nth-of-type(3)_&]:rounded-tr-3xl last:odd:rounded-br-xl" src="https://a0.muscache.com/im/pictures/46132386-ad38-4573-b0aa-420294cd9ec2.jpg?im_w=1200" alt="" srcset="">
-            <img class="group-[:nth-of-type(3)_&]:rounded-tr-3xl last:odd:rounded-br-xl" src="https://a0.muscache.com/im/pictures/46132386-ad38-4573-b0aa-420294cd9ec2.jpg?im_w=1200" alt="" srcset="">
+            <img class="w-full h-full col-span-4 lg:row-span-2 lg:col-span-2 lg:first:odd:rounded-l-xl" src="https://a0.muscache.com/im/pictures/46132386-ad38-4573-b0aa-420294cd9ec2.jpg?im_w=1200" alt="" srcset="">
+            <img class="lg:group-[:nth-of-type(3)_&]:rounded-tr-3xl lg:last:odd:rounded-br-xl" src="https://a0.muscache.com/im/pictures/46132386-ad38-4573-b0aa-420294cd9ec2.jpg?im_w=1200" alt="" srcset="">
+            <img class="lg:group-[:nth-of-type(3)_&]:rounded-tr-3xl lg:last:odd:rounded-br-xl" src="https://a0.muscache.com/im/pictures/46132386-ad38-4573-b0aa-420294cd9ec2.jpg?im_w=1200" alt="" srcset="">
+            <img class="lg:group-[:nth-of-type(3)_&]:rounded-tr-3xl lg:last:odd:rounded-br-xl" src="https://a0.muscache.com/im/pictures/46132386-ad38-4573-b0aa-420294cd9ec2.jpg?im_w=1200" alt="" srcset="">
+            <img class="lg:group-[:nth-of-type(3)_&]:rounded-tr-3xl lg:last:odd:rounded-br-xl" src="https://a0.muscache.com/im/pictures/46132386-ad38-4573-b0aa-420294cd9ec2.jpg?im_w=1200" alt="" srcset="">
         </div>
-        <div class="flex w-full gap-5">
-            <div class="flex-col w-3/5 ">
+        <div class="flex flex-col md:flex-row w-full gap-5">
+            <div class="flex-col lg:w-3/5 w-full">
                 <!-- Destination Sub Header -->
                 <div class="flex justify-between pb-5 border-b">
                     <div class="flex flex-col">
